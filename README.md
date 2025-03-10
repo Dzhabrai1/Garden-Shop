@@ -1,6 +1,170 @@
 # Garden Products
 
-## Описание на русском языке, на английском ниже 
+### Links to the Design, Requirements, and Deployed Implementation
+
+- **Design:** [Figma](https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386)
+- **Requirements (Specification):** [Google Docs](https://docs.google.com/document/d/1RU3XZ0tYzUHOfF7ijKEsZjT7f086xNL8-OiYQt-cKFk/edit)
+- **Deployed Implementation (Vercel.com):** [Vercel](https://garden-products-gamma.vercel.app/)
+
+### General Description
+
+This project is an e-commerce platform for home and garden products. The goal is to provide users with a convenient interface for browsing products, adding them to a cart, and placing orders.
+
+### Main Project Features
+
+#### Home Page
+
+- Display a list of 4 categories.
+- Form for receiving a 5% discount.
+- Display 4 random discounted products.
+  
+**"Product of the Day" Modal Window:**
+- Located in the header, accessible from any page.
+- Displays a random product with a 50% discount.
+- Allows adding the product to the cart directly from the modal.
+- After closing the modal, the user remains on the same page from which they clicked.
+
+#### Product Categories
+
+- View a list of all available product categories.
+- Navigate to the "Products by Category" section for the selected category by clicking on the category card.
+
+#### Products by Category
+
+- Display a list of products in the selected category.
+- Sort products (by default, by decreasing price, by increasing price).
+- Filter products (by discount availability and price range).
+- Navigate to detailed product descriptions by clicking on the product card.
+
+#### All Products
+
+- Display the full list of products.
+- Sort products (by default, by decreasing price, by increasing price).
+- Filter products (by discount availability and price range).
+- Navigate to detailed product descriptions by clicking on the product card.
+
+#### Discounted Products
+
+- Display a list of discounted products.
+- Sort products (by default, by decreasing price, by increasing price).
+- Filter products (by price range).
+- Navigate to detailed product descriptions by clicking on the product card.
+
+#### Favorite Products
+
+- Display a list of favorite products (marked with a heart).
+- Sort products (by default, by decreasing price, by increasing price).
+- Filter products (by price range).
+- Navigate to detailed product descriptions by clicking on the product card.
+
+#### Product Details
+
+- Full information about the selected product (name, price, description, images).
+- Ability to add the product to the cart.
+
+#### Cart
+
+- Display a list of selected products with their quantity and total cost.
+- Ability to change the quantity of products, remove products from the cart.
+- Calculate and display the total cost of products in the cart.
+- Ability to submit order data via a form.
+
+#### Page Not Found
+
+- Display a page with a message that the requested page was not found.
+- Option to return to the home page.
+
+#### Page Skeleton (Loader)
+
+- When loading the “All Products,” “Favorite Products,” “Discounted Products,” and “Products by Category” pages, a skeleton loader is shown until the products are loaded.
+
+#### Dark Theme
+
+- Toggle to switch to a dark theme. All pages adopt the selected theme's appearance.
+- The selected theme is saved in Local Storage.
+
+#### Mobile Responsiveness
+
+- The application is properly displayed on various devices according to the design.
+
+### Technology Stack
+
+- **React:** The primary framework for developing the user interface. Used for creating components and managing the application's state.
+- **Redux Toolkit:** State management for the application. Provides centralized state storage and simplifies data passing between components.
+- **React Router:** Routing within the application. Used to create navigation between pages.
+- **SCSS:** Component styling. Allows creating and managing CSS styles within JavaScript.
+- **Git and GitHub:** Version control system and code hosting. Used for managing code changes and collaborative work on the project.
+- **React Loading Skeleton:** A library for creating page skeletons.
+
+### Project Authors
+
+#### Yelyzaveta Shydenko
+
+- **[LinkedIn](https://www.linkedin.com/in/yelyzaveta-shydenko-a4654a22b/)**
+- **[GitHub](https://github.com/YelShydenko)**
+
+**Implemented Features:**
+
+- Project setup
+- Discount form implementation (5% off)
+- Sorting and filtering
+- Product card
+- Shopping cart
+- Breadcrumbs
+- Burger menu
+- Refactoring
+- Deployment
+
+#### Alina Kobets
+
+- **[LinkedIn](https://www.linkedin.com/in/alina-kobets-74991329b)**
+- **[GitHub](https://github.com/AlinaKobetss)**
+
+**Implemented Features:**
+
+- Footer
+- Products by category
+- Error 404 page
+- "Product of the Day" modal window
+
+#### Dmytro Morokhotin
+
+- **[LinkedIn](https://www.linkedin.com/in/dmytro-morokhotin-84877b310)**
+- **[GitHub](https://github.com/Boxer2023)**
+
+**Implemented Features:**
+
+- Displaying a list of 4 categories on the home page
+- Discounted products
+- Product details page
+- Page skeletons
+
+#### Alina Muzyka
+
+- **[LinkedIn](https://www.linkedin.com/in/alina-muzyka-505b52307/)**
+- **[GitHub](https://github.com/Muzyka788516)**
+
+**Implemented Features:**
+
+- Application header and banner
+- Product category
+- Dark theme
+- Mobile responsiveness
+- Project presentation preparation
+
+#### Yurii Kyrlapov
+
+- **[GitHub](https://github.com/YuriiKyrlapov)**
+
+**Implemented Features:**
+
+- Displaying 4 random discounted products on the home page
+- All products page
+- Favorites page
+- README formatting
+
+  
+----
 
 ### Ссылки на макет, ТЗ и задеплоенную реализацию
 
@@ -164,170 +328,3 @@
 - Все товары
 - Страница избранное
 - Оформление README
-
----
-
-## English Version
-
-### Links to the Design, Requirements, and Deployed Implementation
-
-- **Design:** [Figma](https://www.figma.com/design/SDNWLzCWkh9ZXdCpWEaByv/project-frontend?node-id=5251-7386)
-- **Requirements (Specification):** [Google Docs](https://docs.google.com/document/d/1RU3XZ0tYzUHOfF7ijKEsZjT7f086xNL8-OiYQt-cKFk/edit)
-- **Deployed Implementation (Vercel.com):** [Vercel](https://garden-products-gamma.vercel.app/)
-
-### General Description
-
-This project is an e-commerce platform for home and garden products. The goal is to provide users with a convenient interface for browsing products, adding them to a cart, and placing orders.
-
-### Main Project Features
-
-#### Home Page
-
-- Display a list of 4 categories.
-- Form for receiving a 5% discount.
-- Display 4 random discounted products.
-  
-**"Product of the Day" Modal Window:**
-- Located in the header, accessible from any page.
-- Displays a random product with a 50% discount.
-- Allows adding the product to the cart directly from the modal.
-- After closing the modal, the user remains on the same page from which they clicked.
-
-#### Product Categories
-
-- View a list of all available product categories.
-- Navigate to the "Products by Category" section for the selected category by clicking on the category card.
-
-#### Products by Category
-
-- Display a list of products in the selected category.
-- Sort products (by default, by decreasing price, by increasing price).
-- Filter products (by discount availability and price range).
-- Navigate to detailed product descriptions by clicking on the product card.
-
-#### All Products
-
-- Display the full list of products.
-- Sort products (by default, by decreasing price, by increasing price).
-- Filter products (by discount availability and price range).
-- Navigate to detailed product descriptions by clicking on the product card.
-
-#### Discounted Products
-
-- Display a list of discounted products.
-- Sort products (by default, by decreasing price, by increasing price).
-- Filter products (by price range).
-- Navigate to detailed product descriptions by clicking on the product card.
-
-#### Favorite Products
-
-- Display a list of favorite products (marked with a heart).
-- Sort products (by default, by decreasing price, by increasing price).
-- Filter products (by price range).
-- Navigate to detailed product descriptions by clicking on the product card.
-
-#### Product Details
-
-- Full information about the selected product (name, price, description, images).
-- Ability to add the product to the cart.
-
-#### Cart
-
-- Display a list of selected products with their quantity and total cost.
-- Ability to change the quantity of products, remove products from the cart.
-- Calculate and display the total cost of products in the cart.
-- Ability to submit order data via a form.
-
-#### Page Not Found
-
-- Display a page with a message that the requested page was not found.
-- Option to return to the home page.
-
-#### Page Skeleton (Loader)
-
-- When loading the “All Products,” “Favorite Products,” “Discounted Products,” and “Products by Category” pages, a skeleton loader is shown until the products are loaded.
-
-#### Dark Theme
-
-- Toggle to switch to a dark theme. All pages adopt the selected theme's appearance.
-- The selected theme is saved in Local Storage.
-
-#### Mobile Responsiveness
-
-- The application is properly displayed on various devices according to the design.
-
-### Technology Stack
-
-- **React:** The primary framework for developing the user interface. Used for creating components and managing the application's state.
-- **Redux Toolkit:** State management for the application. Provides centralized state storage and simplifies data passing between components.
-- **React Router:** Routing within the application. Used to create navigation between pages.
-- **SCSS:** Component styling. Allows creating and managing CSS styles within JavaScript.
-- **Git and GitHub:** Version control system and code hosting. Used for managing code changes and collaborative work on the project.
-- **React Loading Skeleton:** A library for creating page skeletons.
-
-### Project Authors
-
-#### Yelyzaveta Shydenko
-
-- **[LinkedIn](https://www.linkedin.com/in/yelyzaveta-shydenko-a4654a22b/)**
-- **[GitHub](https://github.com/YelShydenko)**
-
-**Implemented Features:**
-
-- Project setup
-- Discount form implementation (5% off)
-- Sorting and filtering
-- Product card
-- Shopping cart
-- Breadcrumbs
-- Burger menu
-- Refactoring
-- Deployment
-
-#### Alina Kobets
-
-- **[LinkedIn](https://www.linkedin.com/in/alina-kobets-74991329b)**
-- **[GitHub](https://github.com/AlinaKobetss)**
-
-**Implemented Features:**
-
-- Footer
-- Products by category
-- Error 404 page
-- "Product of the Day" modal window
-
-#### Dmytro Morokhotin
-
-- **[LinkedIn](https://www.linkedin.com/in/dmytro-morokhotin-84877b310)**
-- **[GitHub](https://github.com/Boxer2023)**
-
-**Implemented Features:**
-
-- Displaying a list of 4 categories on the home page
-- Discounted products
-- Product details page
-- Page skeletons
-
-#### Alina Muzyka
-
-- **[LinkedIn](https://www.linkedin.com/in/alina-muzyka-505b52307/)**
-- **[GitHub](https://github.com/Muzyka788516)**
-
-**Implemented Features:**
-
-- Application header and banner
-- Product category
-- Dark theme
-- Mobile responsiveness
-- Project presentation preparation
-
-#### Yurii Kyrlapov
-
-- **[GitHub](https://github.com/YuriiKyrlapov)**
-
-**Implemented Features:**
-
-- Displaying 4 random discounted products on the home page
-- All products page
-- Favorites page
-- README formatting
